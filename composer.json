@@ -1,5 +1,5 @@
 {
-    "name": "CriteriaExperiment",
+    "name": "yahiru/criteria-experiment",
     "require": {
         "php": ">=7.1",
         "ext-pdo": "*",
