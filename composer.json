@@ -1,0 +1,13 @@
+{
+    "name": "CriteriaExperiment",
+    "require": {
+        "php": ">=7.1",
+        "ext-pdo": "*",
+        "nilportugues/sql-query-builder": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yahiru\\CriteriaExperiment\\": "src/"
+        }
+    }
+}
