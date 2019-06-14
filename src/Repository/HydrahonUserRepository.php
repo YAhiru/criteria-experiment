@@ -38,7 +38,7 @@ final class HydrahonUserRepository
      */
     public function findAllBy(CriteriaInterFace $criteria): array
     {
-        $stmt = $this->select()->where($criteria)->execute();
+        $stmt = $this->select()->where($criteria(null))->execute();
 
         foreach ($stmt as $record) {
 

@@ -7,9 +7,10 @@ use Yahiru\CriteriaExperiment\Model\Authority;
 
 final class Admin implements CriteriaInterFace
 {
-    public function __invoke($query): SelectBase
+    public function __invoke($query): \Closure
     {
-        /** @var SelectBase $query */
-        return $query->where('auth', '=', Authority::ADMIN);
+        return function (SelectBase $query) {
+            $query->where('auth', '=', Authority::ADMIN);
+        };
     }
 }

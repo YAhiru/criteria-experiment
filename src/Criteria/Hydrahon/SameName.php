@@ -14,9 +14,10 @@ final class SameName implements CriteriaInterFace
         $this->name = $name;
     }
 
-    public function __invoke($query): SelectBase
+    public function __invoke($query): \Closure
     {
-        /** @var SelectBase $query */
-        return $query->where('name', '=', $this->name);
+        return function (SelectBase $query) {
+            $query->where('name', '=', $this->name);
+        };
     }
 }
