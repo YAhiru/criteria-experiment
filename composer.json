@@ -3,7 +3,8 @@
     "require": {
         "php": ">=7.1",
         "ext-pdo": "*",
-        "nilportugues/sql-query-builder": "^1.7"
+        "nilportugues/sql-query-builder": "^1.7",
+        "clancats/hydrahon": "^1.1"
     },
     "autoload": {
         "psr-4": {
